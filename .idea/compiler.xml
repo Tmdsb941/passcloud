@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="passcloud" />
+        <module name="passcloud-cloud" />
+        <module name="passcloud-cloud-eureka" />
+        <module name="passcloud-goods" />
+        <module name="passcloud-order" />
+        <module name="passcloud-personal-center" />
+        <module name="passcloud-pojo" />
+        <module name="passcloud-warehouse" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="passcloud-cloud-server" target="1.8" />
+      <module name="passcloudcloud" target="1.8" />
+      <module name="warehouse" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

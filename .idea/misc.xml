@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/passcloud-goods/pom.xml" />
+        <option value="$PROJECT_DIR$/passcloud-pojo/pom.xml" />
+        <option value="$PROJECT_DIR$/passcloud-order/pom.xml" />
+        <option value="$PROJECT_DIR$/passcloud-warehouse/pom.xml" />
+        <option value="$PROJECT_DIR$/passcloud-personal-center/pom.xml" />
+        <option value="$PROJECT_DIR$/passcloud-cloud/pom.xml" />
+        <option value="$PROJECT_DIR$/passcloud-cloud/passcloud-cloud-eureka/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
