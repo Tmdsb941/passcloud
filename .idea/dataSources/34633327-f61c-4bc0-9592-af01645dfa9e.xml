@@ -1669,21 +1669,21 @@ Login_type</ColNames>
     <column id="352" parent="252" name="Province">
       <Position>5</Position>
       <Comment>省</Comment>
-      <DataType>smallint(6)|0s</DataType>
+      <DataType>smallint(2) unsigned zerofill|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="353" parent="252" name="City">
       <Position>6</Position>
       <Comment>市</Comment>
-      <DataType>smallint(6)|0s</DataType>
+      <DataType>smallint(2) unsigned zerofill|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="354" parent="252" name="District">
       <Position>7</Position>
       <Comment>区</Comment>
-      <DataType>smallint(6)|0s</DataType>
+      <DataType>smallint(2) unsigned zerofill|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -2111,7 +2111,7 @@ Login_type</ColNames>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="415" parent="256" name="Product_ids">
+    <column id="415" parent="256" name="Product_id">
       <Position>2</Position>
       <Comment>商品id</Comment>
       <DataType>int(10) unsigned|0s</DataType>

@@ -9,6 +9,8 @@
         <module name="passcloud" />
         <module name="passcloud-cloud" />
         <module name="passcloud-cloud-eureka" />
+        <module name="passcloud-cloud-zuul" />
+        <module name="passcloud-eureka-ribbon" />
         <module name="passcloud-goods" />
         <module name="passcloud-order" />
         <module name="passcloud-personal-center" />

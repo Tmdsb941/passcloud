@@ -3,7 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/passcloud-cloud" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/passcloud-cloud/passcloud-cloud-eureka" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/passcloud-cloud/passcloud-cloud-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/passcloud-cloud/passcloud-cloud-zuul" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/passcloud-cloud/passcloud-eureka-ribbon" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/passcloud-goods" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/passcloud-order" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/passcloud-personal-center" charset="UTF-8" />
