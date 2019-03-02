@@ -26,7 +26,7 @@ public class GoodsService {
         List<ProductInfo> list=Arrays.asList(productInfos);
         return list;
     }
-
+//cscs
     public List<ProductInfo> hiError(){
         ProductInfo[] productInfos=this.restTemplate.getForObject("http://CLOUD-GOOD:8889/product/SearchAll",ProductInfo[].class);
         List<ProductInfo> list=Arrays.asList(productInfos);
