@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: cloud-good
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/Online_Retailers?rewriteBatchedStatements=true&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&serverTimezone=GMT%2B8
+    username: root
+    password: root
+  profiles: peer1
+  jpa:
+    show-sql: true
+    database: mysql
+
+#    properties:
+#      hibernate:
+#        hbm2ddl:
+#          auto: update
+
+server:
+  port: 8889
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8888/eureka/

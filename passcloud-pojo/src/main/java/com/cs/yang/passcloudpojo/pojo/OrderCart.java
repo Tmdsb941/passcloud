@@ -7,10 +7,10 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
-@Entity
-@Table(name = "Order_Cart")
 @Getter
 @Setter
+@Entity
+@Table(name = "Order_Cart")
 public class OrderCart  implements  java.io.Serializable{
 
   @Id
@@ -20,8 +20,8 @@ public class OrderCart  implements  java.io.Serializable{
   private Integer productId;
   private Integer productAmount;
   private Double price;
-  private java.time.LocalDateTime addTimetime;
-  private java.time.LocalDateTime modifiedTime;
+  private String addTimetime;
+  private String modifiedTime;
 
   public OrderCart(){
 

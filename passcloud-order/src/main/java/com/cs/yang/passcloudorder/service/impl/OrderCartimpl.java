@@ -12,18 +12,16 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @RestController
-@RequestMapping("/order")
 public class OrderCartimpl implements OrderCartService {
 
     @Resource
     public OrderCartDao orderCartDao;
 
     @Override
-    @GetMapping("/cart/delete/{id}")
     public String DropCart(int id) {
         String msg="Success";
         try {
-            orderCartDao.deleteById(id);
+            orderCartDao.deleteByCartId(id);
         } catch (Exception e) {
             e.printStackTrace();
             msg="Failure";
@@ -32,13 +30,11 @@ public class OrderCartimpl implements OrderCartService {
     }
 
     @Override
-    @GetMapping("/cart/findall")
     public List<OrderCart> SearchAll(){
         return orderCartDao.findAll();
     }
 
     @Override
-    @GetMapping("/cart/add/{cart}")
     public String AddCart(@PathVariable("cart") OrderCart cart) {
         String msg="Success";
         OrderCart orderCart=new OrderCart(cart);
@@ -52,9 +48,8 @@ public class OrderCartimpl implements OrderCartService {
     }
 
     @Override
-    @GetMapping("/cart/{id}")
     public OrderCart SearchCartOne(int csid) {
-        OrderCart orderCart=orderCartDao.findById(csid).get();
+        OrderCart orderCart=orderCartDao.findAllByCartId(csid);
         return orderCart;
     }
 }

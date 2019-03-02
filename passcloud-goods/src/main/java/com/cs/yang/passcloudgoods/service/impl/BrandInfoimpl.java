@@ -12,11 +12,13 @@ import java.util.List;
 
 
 @RestController
+@RequestMapping("/cs")
 public class BrandInfoimpl  implements BrandInfoService {
 
     @Autowired
     private BrandInfoDao brandInfoDao;
 
+    @RequestMapping("/CSCS")
     public List<BrandInfo> BrandSearchlAll() {
         return brandInfoDao.findAll();
     }

@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RequestMapping("/order")
 @RestController
 public class OrderMasterimpl implements OrderMasterService {
 
@@ -34,7 +33,7 @@ public class OrderMasterimpl implements OrderMasterService {
     public String MasterDel(int id) {
         String msg="Success";
         try {
-            orderMasterDao.deleteById(id);
+            orderMasterDao.deleteByOrderId(id);
         } catch (Exception e) {
             msg="Failure";
             e.printStackTrace();
@@ -48,6 +47,6 @@ public class OrderMasterimpl implements OrderMasterService {
     }
     @Override
     public OrderMaster MasterAllById(@PathVariable("id") int id) {
-        return orderMasterDao.findById(id).get();
+        return orderMasterDao.findAllByOrderId(id);
     }
 }

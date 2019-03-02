@@ -14,7 +14,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/order")
 public class OrderMasterController {
-
+//订单主表
     @Autowired
     private OrderMasterService orderMasterService;
 
@@ -46,7 +46,7 @@ public class OrderMasterController {
         master.setPaymentMoney(3599.0);
         master.setShippingCompName("邮政");
         master.setShippingSn("kd2019022001");
-        master.setCreateTime(localDateTime3);
+        master.setCreateTime(localDateTime3.toString());
         master.setShipingTime(null);
         master.setPayTime(null);
         master.setReceiveTime(null);

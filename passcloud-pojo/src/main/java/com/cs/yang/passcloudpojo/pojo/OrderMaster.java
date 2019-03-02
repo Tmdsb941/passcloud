@@ -29,10 +29,10 @@ public class OrderMaster implements  java.io.Serializable {
   private Double paymentMoney;
   private String shippingCompName;
   private String shippingSn;
-  private java.time.LocalDateTime createTime;
-  private java.time.LocalDateTime shipingTime;
-  private java.time.LocalDateTime payTime;
-  private java.time.LocalDateTime receiveTime;
+  private String createTime;
+  private String shipingTime;
+  private String payTime;
+  private String receiveTime;
   private Integer orderStatus;
   private Integer orderPoint;
   private String invoiceTime;

@@ -1,5 +1,7 @@
 package com.cs.yang.passcloudpojo.pojo;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -22,6 +24,6 @@ public class BrandInfo  implements Serializable {
   private String brandDesc;
   private Integer brandStatus;
   private Integer brandOrder;
-  private java.time.LocalDateTime modifiedTime;
+  private String modifiedTime;
 
 }

@@ -11,19 +11,16 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Collections;
 import java.util.List;
 
-@RequestMapping("/product")
 @RestController
 public class ProductInfoimpl implements ProductInfoService {
     @Autowired
     private ProductInfoDao productInfoDao;
 
     @Override
-    @RequestMapping("/info/Searchall")
     public List<ProductInfo> SearchAll() {
         return productInfoDao.findAll();
     }
     @Override
-    @RequestMapping("/info/Searchall/{id}")
     public ProductInfo SearchAllById(@PathVariable("id") int id) {
         return productInfoDao.findAllByProductId(id);
     }

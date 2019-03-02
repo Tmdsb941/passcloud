@@ -10,12 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/product")
 public class ProductCategoryimpl implements ProductCategoryService {
     @Autowired
     private ProductCategoryDao productCategoryDao;
     @Override
-    @RequestMapping("/category/Searchall")
     public List<ProductCategory> SearchAll() {
         return productCategoryDao.chaxun();
     }

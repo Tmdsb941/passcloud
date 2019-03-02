@@ -20,7 +20,7 @@
         <java.version>1.8</java.version>
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
     </properties>
-
+<!--fenqili  gelanweici-->
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>

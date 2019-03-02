@@ -44,11 +44,11 @@ public class ProductInfo  {
   private Double weeith;
   @Enumerated(EnumType.STRING)
   private ColorType  colorType;
-  private java.time.LocalDateTime productionDate;
+  private String productionDate;
   private Integer shelfLife;
   private String descript;
-  private java.time.LocalDateTime indate;
-  private java.time.LocalDateTime modifiedTime;
+  private String indate;
+  private String modifiedTime;
 //  @ManyToOne(fetch = FetchType.EAGER)
 //  @JoinColumn(name = "Product_id")
 //  @JsonIgnore

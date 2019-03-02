@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/productcategory")
 public class ProductCategoryController  {
-
+//商品分类
     @Autowired
     private ProductCategoryDao productCategoryDao;
 
@@ -22,7 +22,6 @@ public class ProductCategoryController  {
         return  productCategoryDao.findAll();
 
     }
-
     @RequestMapping("/SearchAl")
     public  List<ProductCategory> chaxun(){
         return productCategoryDao.chaxun();

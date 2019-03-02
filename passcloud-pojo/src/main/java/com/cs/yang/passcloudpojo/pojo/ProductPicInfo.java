@@ -24,7 +24,7 @@ public class ProductPicInfo  implements java.io.Serializable{
   private Integer isMaster;
   private Integer picOrder;
   private Integer picStatus;
-  private java.time.LocalDateTime modifiedTime;
+  private String modifiedTime;
   @ManyToOne(fetch = FetchType.EAGER)
   @JoinColumn(name="Product_id")
   @JsonIgnore

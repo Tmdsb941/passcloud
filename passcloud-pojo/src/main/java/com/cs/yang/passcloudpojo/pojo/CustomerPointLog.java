@@ -1,8 +1,13 @@
 package com.cs.yang.passcloudpojo.pojo;
 
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 
+@Getter
+@Setter
 @Entity
 @Table(name="Customer_Point_Log")
 public class CustomerPointLog  implements  java.io.Serializable{
@@ -14,60 +19,8 @@ public class CustomerPointLog  implements  java.io.Serializable{
   private Integer source;
   private Integer referNumber;
   private Integer changePoint;
-  private java.time.LocalDateTime createTime;
+  private String createTime;
 
 
-  public Integer getPointId() {
-    return pointId;
-  }
-
-  public void setPointId(Integer pointId) {
-    this.pointId = pointId;
-  }
-
-
-  public Integer getCustomerId() {
-    return customerId;
-  }
-
-  public void setCustomerId(Integer customerId) {
-    this.customerId = customerId;
-  }
-
-
-  public Integer getSource() {
-    return source;
-  }
-
-  public void setSource(Integer source) {
-    this.source = source;
-  }
-
-
-  public Integer getReferNumber() {
-    return referNumber;
-  }
-
-  public void setReferNumber(Integer referNumber) {
-    this.referNumber = referNumber;
-  }
-
-
-  public Integer getChangePoint() {
-    return changePoint;
-  }
-
-  public void setChangePoint(Integer changePoint) {
-    this.changePoint = changePoint;
-  }
-
-
-  public java.time.LocalDateTime getCreateTime() {
-    return createTime;
-  }
-
-  public void setCreateTime(java.time.LocalDateTime createTime) {
-    this.createTime = createTime;
-  }
 
 }

@@ -7,7 +7,6 @@ import java.util.List;
 
 @Service
 public interface OrderMasterService {
-
     String MasterAdd(OrderMaster master);
     String MasterDel(int id);
     List<OrderMaster> MasterAll();

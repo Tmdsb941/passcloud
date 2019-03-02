@@ -17,8 +17,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/order")
 public class OrderCartController  {
-
-    @Resource
+    //购物车
+    @Autowired
     private OrderCartService orderCartService;
 
 
@@ -40,8 +40,8 @@ public class OrderCartController  {
         orderCart.setProductId(Productid);
         orderCart.setProductAmount(Producctamount);
         orderCart.setPrice(money);
-        orderCart.setAddTimetime(Addtimetime);
-        orderCart.setModifiedTime(Modifiedtime);
+        orderCart.setAddTimetime(Addtimetime.toString());
+        orderCart.setModifiedTime(Modifiedtime.toString());
         String msg= "Success";
         try {
             orderCartService.AddCart(orderCart);
@@ -51,8 +51,8 @@ public class OrderCartController  {
         }
         return  msg;
     }
-    @RequestMapping("/cart/dtl")
-    public  String csdtl(){
+    @RequestMapping("/cart/dtl/{id}")
+    public  String csdtl(@PathVariable("id")int id){
         String msg="Success";
         try {
             orderCartService.DropCart(1);
@@ -63,9 +63,9 @@ public class OrderCartController  {
         return msg;
     }
 
-    @RequestMapping("/cart/dan")
-    public OrderCart csone(){
-        return orderCartService.SearchCartOne(2);
+    @RequestMapping("/cart/dan/{id}")
+    public OrderCart csone(@PathVariable("id") int id){
+        return orderCartService.SearchCartOne(id);
     }
 
 }
